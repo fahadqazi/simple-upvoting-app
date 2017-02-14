@@ -17,7 +17,7 @@ class ProductList extends React.Component{
         this.setState({ products: Seed.products})
     }
 
-    handleProductUpVote(productId) {
+    handleProductUpVote = (productId) => {
         this.setState({
             products: this.state.products.map((product) => {
                 if (product.id === productId){
