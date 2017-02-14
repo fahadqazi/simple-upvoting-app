@@ -1,13 +1,17 @@
 class ProductList extends React.Component{
-    constructor(props) {
-        super(props)
+    // constructor(props) {
+    //     super(props)
 
-        this.state = {
-            products : []
-        }
+    //     this.state = {
+    //         products : []
+    //     }
 
-        this.handleProductUpVote = this.handleProductUpVote.bind(this)
-    }
+    //     this.handleProductUpVote = this.handleProductUpVote.bind(this)
+    // }
+
+    state = {
+        products: []
+    };
 
     componentDidMount(){
         this.setState({ products: Seed.products})
